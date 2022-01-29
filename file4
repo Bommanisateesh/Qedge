@@ -1,0 +1,21 @@
+    }
+
+              if (tempNode.hasChildNodes()) {
+                  // loop again if has child nodes
+                  printNote(tempNode.getChildNodes());
+              }
+
+              System.out.println("Node Name =" + tempNode.getNodeName() + " [CLOSE]");
+
+          }
+
+      }
+
+  }
+
+  // read file from project resource's folder.
+  private static InputStream readXmlFileIntoInputStream(final String fileName) {
+      return ReadXmlDomParserLoop.class.getClassLoader().getResourceAsStream(fileName);
+  }
+
+}
